@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { Provider } from 'react-redux';
 
 import Store from './src/Store';
-import { Header } from './src/components';
+import { Header, CryptoContainer } from './src/components';
 
 export default class App extends React.Component {
   render() {
@@ -11,6 +11,7 @@ export default class App extends React.Component {
       <Provider store={Store}>
         <View>
           <Header />
+          <CryptoContainer />
         </View>
       </Provider>
     );
