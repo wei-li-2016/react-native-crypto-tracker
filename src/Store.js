@@ -17,6 +17,12 @@ const Store = createStore(
   RootReducer,
   compose(
     middleware,
-    devTool
+    devTool({
+      name: Platform.OS,
+      hostname: 'localhost',
+      port: 5678
+    }),
   )
 )
+
+export default Store;

@@ -4,7 +4,12 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver"
+  },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
   },
   "dependencies": {
     "expo": "^32.0.0",
